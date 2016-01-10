@@ -1,0 +1,14 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <com.roubow.viewflipper.HorizontalScrollListView
+        android:id="@+id/lv_view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.roubow.viewflipper.HorizontalScrollListView>
+
+</LinearLayout>
