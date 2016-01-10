@@ -1,0 +1,113 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* library.iml
+* pom.xml
+* target\
+* target\classes\
+* target\classes\com\
+* target\classes\com\viewpagerindicator\
+* target\classes\com\viewpagerindicator\BuildConfig.class
+* target\classes\com\viewpagerindicator\CirclePageIndicator$1.class
+* target\classes\com\viewpagerindicator\CirclePageIndicator$SavedState$1.class
+* target\classes\com\viewpagerindicator\CirclePageIndicator$SavedState.class
+* target\classes\com\viewpagerindicator\CirclePageIndicator.class
+* target\classes\com\viewpagerindicator\IconPageIndicator$1.class
+* target\classes\com\viewpagerindicator\IconPageIndicator.class
+* target\classes\com\viewpagerindicator\IconPagerAdapter.class
+* target\classes\com\viewpagerindicator\IcsLinearLayout.class
+* target\classes\com\viewpagerindicator\LinePageIndicator$1.class
+* target\classes\com\viewpagerindicator\LinePageIndicator$SavedState$1.class
+* target\classes\com\viewpagerindicator\LinePageIndicator$SavedState.class
+* target\classes\com\viewpagerindicator\LinePageIndicator.class
+* target\classes\com\viewpagerindicator\PageIndicator.class
+* target\classes\com\viewpagerindicator\R$attr.class
+* target\classes\com\viewpagerindicator\R$bool.class
+* target\classes\com\viewpagerindicator\R$color.class
+* target\classes\com\viewpagerindicator\R$dimen.class
+* target\classes\com\viewpagerindicator\R$drawable.class
+* target\classes\com\viewpagerindicator\R$id.class
+* target\classes\com\viewpagerindicator\R$integer.class
+* target\classes\com\viewpagerindicator\R$style.class
+* target\classes\com\viewpagerindicator\R$styleable.class
+* target\classes\com\viewpagerindicator\R.class
+* target\classes\com\viewpagerindicator\TabPageIndicator$1.class
+* target\classes\com\viewpagerindicator\TabPageIndicator$2.class
+* target\classes\com\viewpagerindicator\TabPageIndicator$OnTabReselectedListener.class
+* target\classes\com\viewpagerindicator\TabPageIndicator$TabView.class
+* target\classes\com\viewpagerindicator\TabPageIndicator.class
+* target\classes\com\viewpagerindicator\TitlePageIndicator$1.class
+* target\classes\com\viewpagerindicator\TitlePageIndicator$IndicatorStyle.class
+* target\classes\com\viewpagerindicator\TitlePageIndicator$LinePosition.class
+* target\classes\com\viewpagerindicator\TitlePageIndicator$OnCenterItemClickListener.class
+* target\classes\com\viewpagerindicator\TitlePageIndicator$SavedState$1.class
+* target\classes\com\viewpagerindicator\TitlePageIndicator$SavedState.class
+* target\classes\com\viewpagerindicator\TitlePageIndicator.class
+* target\classes\com\viewpagerindicator\UnderlinePageIndicator$1.class
+* target\classes\com\viewpagerindicator\UnderlinePageIndicator$2.class
+* target\classes\com\viewpagerindicator\UnderlinePageIndicator$SavedState$1.class
+* target\classes\com\viewpagerindicator\UnderlinePageIndicator$SavedState.class
+* target\classes\com\viewpagerindicator\UnderlinePageIndicator.class
+* target\generated-sources\
+* target\generated-sources\r\
+* target\generated-sources\r\com\
+* target\generated-sources\r\com\viewpagerindicator\
+* target\generated-sources\r\com\viewpagerindicator\BuildConfig.java
+* target\generated-sources\r\com\viewpagerindicator\Manifest.java
+* target\generated-sources\r\com\viewpagerindicator\R.java
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => viewpagerindicator\src\main\AndroidManifest.xml
+* res\ => viewpagerindicator\src\main\res\
+* src\ => viewpagerindicator\src\main\java\
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

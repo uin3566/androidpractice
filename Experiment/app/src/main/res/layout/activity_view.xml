@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xuf.www.experiment.widget.ViewActivityLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.xuf.www.experiment.widget.ViewActivityButton
+        android:id="@+id/btn_test"
+        android:text="test"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"/>
+
+</com.xuf.www.experiment.widget.ViewActivityLinearLayout>

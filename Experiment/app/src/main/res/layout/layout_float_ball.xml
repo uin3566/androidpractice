@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/fl_float_ball"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:background="@drawable/bg_float_ball">
+
+    <TextView
+        android:text="5%"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

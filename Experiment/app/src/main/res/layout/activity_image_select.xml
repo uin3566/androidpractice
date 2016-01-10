@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.xuf.www.experiment.widget.WxActionBar
+        android:id="@+id/wx_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"/>
+
+    <GridView
+        android:id="@+id/gv_images"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/wx_action_bar"
+        android:cacheColorHint="@android:color/transparent"
+        android:columnWidth="90dip"
+        android:gravity="center"
+        android:horizontalSpacing="2dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:layoutAnimation="@anim/anim_grid_layout"
+        android:verticalSpacing="2dip"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_grey">
+
+        <RelativeLayout
+            android:id="@+id/rl_image_class_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_image_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:includeFontPadding="false"
+                android:text="所有图片"
+                android:textColor="@drawable/selector_image_class"/>
+
+            <ImageView
+                android:id="@+id/iv_triangle"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignBottom="@id/tv_image_class"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/tv_image_class"
+                android:src="@drawable/selector_right_down_triangle"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_bottom_layout"
+        android:layout_below="@id/wx_action_bar">
+
+        <View
+            android:id="@+id/v_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:background="#b3000000"/>
+
+        <com.xuf.www.experiment.ui.ImageFolderPopupWindow
+            android:id="@+id/popup_window"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="bottom"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+</RelativeLayout>

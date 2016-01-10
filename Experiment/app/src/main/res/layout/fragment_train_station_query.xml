@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_from_station"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="出发地:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_from_station"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_from_station"
+            android:background="@drawable/shape_train_no_edit_text"
+            android:paddingLeft="5dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_to_station"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/et_from_station"
+            android:gravity="center"
+            android:text="目的地:"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_to_station"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/tv_to_station"
+            android:background="@drawable/shape_train_no_edit_text"
+            android:paddingLeft="5dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_query"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_button_query"
+            android:gravity="center"
+            android:text="查询"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_train_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

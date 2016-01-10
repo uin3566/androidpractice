@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TableView">
+        <attr name="tbvTextSize" format="reference|dimension"/>
+        <attr name="tbvTextColor" format="reference|color"/>
+        <attr name="tbvTextViewBackground" format="reference"/>
+        <attr name="tbvDividingColor" format="reference|color"/>
+        <attr name="tbvDividingWidth" format="reference|dimension"/>
+    </declare-styleable>
+</resources>

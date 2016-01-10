@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xuf.www.experiment">
+
+    <permission android:name="com.xuf.www.experiment.permission.ACCESS_BOOK_SERVICE"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.xuf.www.experiment.permission.ACCESS_BOOK_SERVICE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <application
+        android:name=".util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.ViewActivity"
+            android:label="@string/app_name" />
+
+        <activity android:name=".ui.CommonAdapterActivity" />
+
+        <activity android:name=".ui.ImageLoaderActivity" />
+
+        <activity android:name=".ui.ImageSelectActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".ui.TrainQueryActivity" />
+
+        <activity android:name=".ui.ScrollTabViewPagerActivity" />
+
+        <activity android:name=".ipc.MessengerActivity"/>
+
+        <service
+            android:name=".ipc.MessengerService"
+            android:process=":remote" />
+
+        <activity android:name=".ipc.BookManagerActivity"/>
+
+        <service android:name=".ipc.BookManagerService"
+            android:process=":remote"/>
+
+        <activity android:name=".ipc.ProviderActivity"/>
+
+        <provider
+            android:authorities="com.xuf.www.experiment.ipc.provider"
+            android:name=".ipc.BookProvider"
+            android:permission="com.xuf.www.experiment.ipc.PROVIDER"
+            android:process=":provider"/>
+
+        <activity android:name=".ipc.BinderPoolActivity"/>
+
+        <service android:name=".ipc.BinderPoolService"
+            android:process=":remote"/>
+
+        <activity android:name=".ui.DragViewActivity"/>
+
+        <activity android:name=".ui.FloatWidgetActivity"/>
+        <service android:name=".service.FloatWidgetService"/>
+
+        <activity android:name=".ui.AnimatorActivity"/>
+
+        <activity android:name=".ui.ActivityTaskActivity"/>
+        <activity android:name=".ui.ActivityA"
+            android:launchMode="standard"/>
+        <activity android:name=".ui.ActivityB"
+            android:launchMode="standard"/>
+        <activity android:name=".ui.ActivityC"
+            android:launchMode="standard"/>
+
+        <activity android:name=".mvp.MVPLoginActivity"/>
+
+        <activity android:name=".ui.SimpleRecyclerViewActivity"/>
+    </application>
+
+</manifest>
