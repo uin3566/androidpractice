@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_page_background">
+
+    <LinearLayout
+        android:id="@+id/ll_buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_begin_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_button"
+            android:text="@string/begin_game"/>
+
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_button"
+            android:text="@string/history_record"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_above="@id/ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:text="@string/game_title"
+            android:textSize="80sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

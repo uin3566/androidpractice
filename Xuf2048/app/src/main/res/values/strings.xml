@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Xuf2048</string>
+
+    <string name="game_title">2048</string>
+    <string name="score">分数</string>
+    <string name="high_score">最高分</string>
+    <string name="game_over">Game Over!</string>
+    <string name="begin_game">开始游戏</string>
+    <string name="history_record">历史记录</string>
+    <string name="score_in_date">分数:</string>
+    <string name="default_score">0</string>
+    <string name="default_date">0000年00月00日 00时00分</string>
+</resources>
