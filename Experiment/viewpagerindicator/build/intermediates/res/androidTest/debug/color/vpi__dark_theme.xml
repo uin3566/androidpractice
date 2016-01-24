@@ -22,4 +22,4 @@
     <!--item android:state_activated="true" android:color="@color/vpi__bright_foreground_holo_dark"/-->
     <item android:color="@color/vpi__bright_foreground_holo_dark"/> <!-- not selected -->
 </selector>
-<!-- From: file:/F:/GitHub/android/Experiment/viewpagerindicator/src/main/res/color/vpi__dark_theme.xml --><!-- From: file:/F:/GitHub/android/Experiment/viewpagerindicator/build/intermediates/bundles/debug/res/color/vpi__dark_theme.xml -->
+<!-- From: file:/F:/GitHub/androidpractice/Experiment/viewpagerindicator/src/main/res/color/vpi__dark_theme.xml --><!-- From: file:/F:/GitHub/androidpractice/Experiment/viewpagerindicator/build/intermediates/bundles/debug/res/color/vpi__dark_theme.xml -->

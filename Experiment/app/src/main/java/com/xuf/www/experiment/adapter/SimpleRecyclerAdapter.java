@@ -41,7 +41,7 @@ public class SimpleRecyclerAdapter extends RecyclerView.Adapter<SimpleRecyclerAd
         recyclerHolder.textView.setText(mDatas[i]);
     }
 
-    public static class RecyclerHolder extends RecyclerView.ViewHolder{
+    public class RecyclerHolder extends RecyclerView.ViewHolder{
         public TextView textView;
 
         public RecyclerHolder(final Context context, View itemView) {
