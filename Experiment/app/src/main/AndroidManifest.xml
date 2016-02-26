@@ -87,6 +87,8 @@
         <activity android:name=".mvp.MVPLoginActivity"/>
 
         <activity android:name=".ui.SimpleRecyclerViewActivity"/>
+
+        <activity android:name=".ui.GestureDetectorActivity"/>
     </application>
 
 </manifest>

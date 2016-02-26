@@ -32,6 +32,9 @@ public class MainActivity extends ListActivity {
 
     private void _setList(){
         //在这里添加item和测试activity
+        mList.add("GestureDetectorActivity");
+        ActivityManager.add("GestureDetectorActivity", GestureDetectorActivity.class);
+
         mList.add("RecyclerViewActivity");
         ActivityManager.add("RecyclerViewActivity", SimpleRecyclerViewActivity.class);
 
