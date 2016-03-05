@@ -89,6 +89,10 @@
         <activity android:name=".ui.SimpleRecyclerViewActivity"/>
 
         <activity android:name=".ui.GestureDetectorActivity"/>
+
+        <activity android:name=".ui.LocalServiceActivity"/>
+
+        <service android:name=".service.LocalService"/>
     </application>
 
 </manifest>
