@@ -93,6 +93,8 @@
         <activity android:name=".ui.LocalServiceActivity"/>
 
         <service android:name=".service.LocalService"/>
+
+        <activity android:name=".ui.WebviewActivity"/>
     </application>
 
 </manifest>
