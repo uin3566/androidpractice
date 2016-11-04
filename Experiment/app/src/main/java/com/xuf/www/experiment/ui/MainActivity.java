@@ -14,6 +14,7 @@ import com.xuf.www.experiment.ipc.BookManagerActivity;
 import com.xuf.www.experiment.ipc.ProviderActivity;
 import com.xuf.www.experiment.mvp.MVPLoginActivity;
 import com.xuf.www.experiment.util.ActivityManager;
+import com.xuf.www.experiment.util.MyApplication;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,13 +26,29 @@ public class MainActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        MyApplication.getInstance().createAc(this);
         _setList();
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, mList);
         setListAdapter(adapter);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        MyApplication.getInstance().destroyAc(this);
+    }
+
     private void _setList(){
         //在这里添加item和测试activity
+        mList.add("HeadFooterRecyclerActivity");
+        ActivityManager.add("HeadFooterRecyclerActivity", HeadFooterRecyclerActivity.class);
+
+        mList.add("GlideActivity1");
+        ActivityManager.add("GlideActivity1", GlideActivity1.class);
+
+        mList.add("UINestStackOverflowActivity");
+        ActivityManager.add("UINestStackOverflowActivity", UINestStackOverflowActivity.class);
+
         mList.add("WebviewActivity");
         ActivityManager.add("WebviewActivity", WebviewActivity.class);
 
@@ -95,6 +112,7 @@ public class MainActivity extends ListActivity {
         super.onListItemClick(l, v, position, id);
         String item = mList.get(position);
         Intent intent = new Intent(MainActivity.this, ActivityManager.get(item));
+        intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
