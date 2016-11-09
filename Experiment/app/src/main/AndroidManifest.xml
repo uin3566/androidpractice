@@ -29,6 +29,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ui.ViewEventActivity"/>
+
         <activity
             android:name=".ui.ViewActivity"
             android:label="@string/app_name"/>
